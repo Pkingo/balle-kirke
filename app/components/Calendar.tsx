@@ -7,10 +7,10 @@ type Props = {
 
 const CalendarItem: React.FC<TEvent> = ({ title, date }) => (
   <div className="flex gap-4">
-    <div className="w-20 bg-green-main text-white justify-center flex items-center rounded">
+    <div className="w-20 h-20 bg-green-main text-white justify-center flex items-center rounded">
       {formatDate(date)}
     </div>
-    <div className="w-56">
+    <div className="flex justify-center flex-col w-56">
       <p>KL. {formatDate(date, "time")}</p>
       <p>{title}</p>
     </div>

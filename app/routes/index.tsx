@@ -25,7 +25,7 @@ export const loader: LoaderFunction = () => {
 export default function Index() {
   const data = useLoaderData<Event[]>();
   return (
-    <div>
+    <div className="flex flex-col gap-8">
       {data.map(({ id, ...event }) => (
         <Event key={id} {...event} />
       ))}
@@ -39,10 +39,10 @@ export const Event: React.FC<Omit<Event, "id">> = ({
   createdAt,
   date,
 }) => (
-  <div>
-    <h4>{title}</h4>
-    <p>{formatDate(date, "date-time")}</p>
+  <div className="flex flex-col gap-2">
+    <h3 className="text-green-main">{title}</h3>
+    <p className="font-bold">Afholdes d. {formatDate(date, "date-time")}</p>
     <p dangerouslySetInnerHTML={{ __html: text }} />
-    <p>{formatDate(createdAt)}</p>
+    <p>Skrevet d. {formatDate(createdAt)}</p>
   </div>
 );

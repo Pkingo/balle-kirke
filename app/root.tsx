@@ -25,7 +25,7 @@ export function links() {
 }
 
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return { title: "Balle Valgmenighed" };
 };
 
 export const loader: LoaderFunction = () => {
