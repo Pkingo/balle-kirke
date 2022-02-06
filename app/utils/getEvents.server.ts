@@ -2,6 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import parseFrontMatter from "front-matter";
 import { getDateFromSlug } from "~/utils/getDateFromSlug";
+import {} from "date-fns";
 
 export async function getEvents() {
   const eventsPath = await fs.readdir(`${__dirname}/../content/events`, {
@@ -14,18 +15,16 @@ export async function getEvents() {
         path.join(`${__dirname}/../content/events`, dirent.name)
       );
       const { attributes, body } = parseFrontMatter<{
-        date?: Date;
         title: string;
       }>(file.toString());
       return {
         slug: dirent.name.replace(/\.md/, ""),
         title: attributes.title,
-        date: attributes.date?.getTime?.(),
         body,
         written: getDateFromSlug(dirent.name),
       };
     })
   );
 
-  return events;
+  return events.sort((event1, event2) => event2.written - event1.written);
 }

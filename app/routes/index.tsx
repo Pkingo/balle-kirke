@@ -20,15 +20,9 @@ export default function Index() {
   );
 }
 
-export const Event: React.FC<FrontPageEvent> = ({
-  title,
-  body,
-  date,
-  written,
-}) => (
+export const Event: React.FC<FrontPageEvent> = ({ title, body, written }) => (
   <div className="flex flex-col gap-2">
     <h3 className="text-green-main">{title}</h3>
-    <p className="font-bold">Afholdes d. {formatDate(date, "date-time")}</p>
     <Markdown options={{ wrapper: "article" }}>{body}</Markdown>
     <p className="italic">Skrevet d. {formatDate(written)}</p>
   </div>

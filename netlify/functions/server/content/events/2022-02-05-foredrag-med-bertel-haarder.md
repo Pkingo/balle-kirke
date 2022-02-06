@@ -1,8 +1,8 @@
 ---
 layout: event
 title: Foredrag med Bertel Haarder
-date: 2022-02-10T18:00:00.395Z
 ---
+
 Foredrag af tidl. minister og medlem af Folketinget, Bertel Haarder om ”Hvorfor fik vi ikke langt tidligere en deling af Slesvig og en nordisk union? – Er det sidste for sent?”
 
 Det er der netop udgivet et spændende historisk værk, der rehabiliterer Skandinavismen.
@@ -19,4 +19,4 @@ Bedste hilsner
 
 Kirsten
 
- Grænseforeningen Vejle Vesteregn
+Grænseforeningen Vejle Vesteregn
