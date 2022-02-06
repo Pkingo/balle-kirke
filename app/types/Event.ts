@@ -7,7 +7,7 @@ export type CalendarEvent = {
 export type FrontPageEvent = {
   slug: string;
   title: string;
-  date: number;
+  date?: number;
   body: string;
   written: number;
 };

@@ -17,13 +17,13 @@ export async function getEvents() {
         path.join(`${__dirname}/../../../../content/events`, dirent.name)
       );
       const { attributes, body } = parseFrontMatter<{
-        date: Date;
+        date?: Date;
         title: string;
       }>(file.toString());
       return {
         slug: dirent.name.replace(/\.md/, ""),
         title: attributes.title,
-        date: attributes.date.getTime(),
+        date: attributes.date?.getTime(),
         body,
         written: getDateFromSlug(dirent.name),
       };
