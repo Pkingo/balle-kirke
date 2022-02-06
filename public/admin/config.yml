@@ -3,7 +3,7 @@ backend:
   # name: test-repo
   branch: main
 
-media_folder: "images/uploads"
+media_folder: "public/images/uploads"
 
 collections:
   - name: "event"
