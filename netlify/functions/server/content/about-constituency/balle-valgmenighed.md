@@ -2,7 +2,20 @@
 layout: event
 title: Balle Valgmenighed
 ---
+### Valgmenigheden
 
-I 1885 stod vores Valgmenighedskirke fiks og færdig tillige med Præstegården, og lige siden har der været noget, der hed Balle Valgmenighed, og det regner vi med, at der også vil være fremover. Naturligvis!
+Balle Valgmenighed blev oprettet i 1885 inspireret af N.F.S Grundtvigs tanker om medbestemmelse og medansvar i kirkelige anliggender. Oprettelse af en valgmenighed på tværs af sognegrænser blev muliggjort i 1868 med loven om valg- og frimenigheder.
 
-Som bekendt skal vi klare alle udgifter selv - vi får ikke den mindste andel af den almindelige kirkeskat. Det har vi også klaret i de forløbne 134 år, og sidste regnskabsår havde vi endda et overskud i omegnen af 100.000 kr., hvad ikke var så ringe endda! Vi er omkring 200 medlemmer af valgmenigheden, og sådan har det med mindre udsving været i ganske mange år. Naturligvis vil vi gerne have, at valgmenigheden får flere medlemmer, det siger sig selv. Vi er også af den opfattelse, at rigtig mange kunne have stor fornøjelse af at være med i fællesskabet omkring kirken i Balle. Vi har et rigtig godt sammenhold, som mange vil synes godt om. Imidlertid er det sådan, at det for nogle kan være svært at forlade sognekirken, selvom vores valgmenighed også er en del af folkekirken - ‘en grundtvigsk del af folkekirken’ som vi kalder os. For at imødekomme dem, der synes godt om Balle Valgmenighed, men på den anden side mener, at de vanskeligt kan forlade deres sognekirke, har vi ‘et godt tilbud! Hvad med at blive medlem af Balle Valgmenigheds Venner? Vi vil være rigtig glade for den opbakning, og så får man naturligvis også tilsendt vores kirkeblad. Der er en del familier, hvor nogle er medlemmer af valgmenigheden, andre ikke. Det kunne måske være en ide, at spørge familiens ikke-medlemmer, om de ikke have lyst til at være medlem af ’Vennekredsen’ for på den måde at opretholde et nærmere forhold til kirken i Balle. Det årlige kontingent udgør 500 kr., og hvis man opgiver sit personnr. til kassereren, er beløbet fradragsberettiget. Det er da også værd at tage med. Man er naturligvis meget velkommen til at tage en snak med kassereren, formanden, præsten eller et andet medlem af bestyrelsen om, hvordan man griber sagen an. Det finder vi sagtens ud af. UEK.
+Balle Valgmenighed er en del af den danske folkekirke. Ligesom en friskole er et alternativ til folkeskolen, er valgmenigheder et alternativ inden for folkekirken. Vi deler bekendelsesgrundlag med folkekirken, og [de kirkelige handlinger](http://www.balle-valgmenighed.dk/kirkelige-handlinger "Kirkelige handlinger"): dåb, konfirmation, vielse og begravelse har samme gyldighed som i den øvrige folkekirke.
+
+Balle Valgmenighed har egen bestyrelse og egen økonomi. [Bestyrelsen](http://www.balle-valgmenighed.dk/kontakt/bestyrelse "Bestyrelse") består af syv medlemmer, valgt på den årlige generalforsamling. Valgmenigheden afholder selv alle udgifter til drift, lønninger, vedligeholdelse af kirke, kirkegård og præstegård mv.
+
+Balle Valgmenighed er en grundtvigsk valgmenighed og derfor lægger vi vægt på en tæt forbindelse mellem det kirkelige og det folkelige. Vi er først og fremmest en menighed, der fejrer gudstjeneste sammen om søndagen. Men vi mødes også om andre ting, f.eks. folkelige foredrag, udflugter, studiekredse, filmaftener, koncerter og meget andet. Og så synger vi så tit vi kan komme til det fra både salmebogen og højskolesangbogen. Se mere under [gudstjenester](http://www.balle-valgmenighed.dk/gudstjenester "Gudstjenester") og [kalender](http://www.balle-valgmenighed.dk/kalender "Kalender").
+
+I valgmenigheden lægger vi vægt på hvert medlems medbestemmelse. Alle medlemmer over 18 år har stemmeret på generalforsamlingerne – også på den, hvor præsten vælges.
+
+Vi er ca. 250 medlemmer, en præst på halv tid samt en graver og en organist på deltid. Du kan læse mere om hvordan du bliver medlem [her](http://www.balle-valgmenighed.dk/bliv-medlem "Bliv medlem").
+
+Balle Valgmenighed er medlem af [Foreningen af Grundtvigske Valg- og Frimenigheder](http://www.friegrundtvigske.dk/) og [Grundtvigsk Forum](http://grundtvig.dk/).
+
+Balle Valgmenighed har en vennekreds, der består af mennesker, der føler en tilknytning til valgmenigheden, men som af forskellige årsager ikke ønsker at melde sig ind. Den enkelte i denne kreds betaler – efter eget skøn – et bidrag (eller en gave) til valgmenighedens arbejde. Bidragydere modtager vores kirkeblad.
