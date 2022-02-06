@@ -54,3 +54,12 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "event" }
       - { label: "Titel", name: "title", widget: "string" }
       - { label: "Tekst", name: "body", widget: "markdown" }
+
+  - name: "church-paper"
+    label: "Kirkeblad"
+    folder: "netlify/functions/server/content/church-paper"
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "event" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Fil", name: "file", widget: "file" }
