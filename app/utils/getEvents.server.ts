@@ -20,7 +20,7 @@ export async function getEvents() {
       return {
         slug: dirent.name.replace(/\.md/, ""),
         title: attributes.title,
-        date: attributes.date?.getTime(),
+        date: attributes.date?.getTime?.(),
         body,
         written: getDateFromSlug(dirent.name),
       };
