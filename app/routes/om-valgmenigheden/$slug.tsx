@@ -2,9 +2,7 @@ import { LoaderFunction, useLoaderData, redirect } from "remix";
 import { AboutConstituencyPage } from "~/types/AboutConstituencyPage";
 import { getAboutConstituencyPage } from "~/utils/getAboutConstituency.server";
 import Markdown from "markdown-to-jsx";
-import { Image } from "~/components/markdown/Image";
-import { Blockquote } from "~/components/markdown/Blockquote";
-import { Anchor } from "~/components/markdown/Anchor";
+import { MarkdownOptions } from "~/components/markdown";
 
 export const loader: LoaderFunction = async ({ params, request }) => {
   const slug = params.slug;
@@ -23,18 +21,7 @@ export default function PostSlug() {
   const { body } = useLoaderData<AboutConstituencyPage>();
   return (
     <div>
-      <Markdown
-        options={{
-          wrapper: "article",
-          overrides: {
-            img: { component: Image },
-            blockquote: { component: Blockquote },
-            a: { component: Anchor },
-          },
-        }}
-      >
-        {body}
-      </Markdown>
+      <Markdown options={MarkdownOptions}>{body}</Markdown>
     </div>
   );
 }

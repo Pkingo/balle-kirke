@@ -1,4 +1,5 @@
 import { Link, LoaderFunction, useLoaderData } from "remix";
+import { PageHeader } from "~/components/PageHeader";
 import { AboutConstituencyPage } from "~/types/AboutConstituencyPage";
 import { getAboutConstituencyPages } from "~/utils/getAboutConstituency.server";
 
@@ -21,7 +22,7 @@ const OmValgmenigheden = () => {
   const pages = useLoaderData<ListItem[]>();
   return (
     <div>
-      <h3 className="text-green-main">Om valgmenigheden</h3>
+      <PageHeader>Om valgmenigheden</PageHeader>
       <ul className="pl-4 mt-2">
         {pages.map((page) => (
           <ListItem to={page.slug}>{page.title}</ListItem>

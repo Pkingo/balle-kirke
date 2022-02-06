@@ -2,7 +2,6 @@ import fs from "fs/promises";
 import path from "path";
 import parseFrontMatter from "front-matter";
 import { getDateFromSlug } from "~/utils/getDateFromSlug";
-import {} from "date-fns";
 
 export async function getEvents() {
   const eventsPath = await fs.readdir(`${__dirname}/../content/events`, {

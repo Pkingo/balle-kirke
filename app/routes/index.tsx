@@ -3,6 +3,8 @@ import { FrontPageEvent } from "~/types/Event";
 import { formatDate } from "~/utils/date";
 import { getEvents } from "~/utils/getEvents.server";
 import Markdown from "markdown-to-jsx";
+import { MarkdownOptions } from "~/components/markdown";
+import { PageHeader } from "~/components/PageHeader";
 
 export const loader: LoaderFunction = async () => {
   const events = await getEvents();
@@ -22,8 +24,8 @@ export default function Index() {
 
 export const Event: React.FC<FrontPageEvent> = ({ title, body, written }) => (
   <div className="flex flex-col gap-2">
-    <h3 className="text-green-main">{title}</h3>
-    <Markdown options={{ wrapper: "article" }}>{body}</Markdown>
+    <PageHeader>{title}</PageHeader>
+    <Markdown options={MarkdownOptions}>{body}</Markdown>
     <p className="italic">Skrevet d. {formatDate(written)}</p>
   </div>
 );

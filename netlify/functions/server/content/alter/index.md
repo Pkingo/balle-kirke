@@ -1,3 +1,7 @@
+---
+title: Alterbilledet
+---
+
 # Alterbilledet
 
 Skærtorsdag d. 24. marts 2016 blev Balle Valgmenigheds nye alterbillede indviet ved en gudstjeneste kl. 14.00. Billedet er malet af billedkunstner Anette Harboe Flensburg. Det er hovedsageligt finansieret af Statens Kunstfonds pulje for kunst i det offentlige rum, desuden har valgmenigheden selv betalt en mindre del.\

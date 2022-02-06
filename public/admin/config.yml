@@ -33,6 +33,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "event" }
+      - { label: "Titel", name: "title", widget: "string" }
       - { label: "Tekst", name: "body", widget: "markdown" }
 
   - name: "priest-blog"
@@ -42,4 +43,14 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "event" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Tekst", name: "body", widget: "markdown" }
+
+  - name: "signup"
+    label: "Bliv medlem"
+    folder: "netlify/functions/server/content/signup"
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "event" }
+      - { label: "Titel", name: "title", widget: "string" }
       - { label: "Tekst", name: "body", widget: "markdown" }
