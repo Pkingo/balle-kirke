@@ -1,6 +1,6 @@
 import { RemixLinkProps } from "@remix-run/react/components";
 import { Link } from "remix";
-import { useMenuContext } from "~/components/contexts/MenuContext";
+import { useMenuContext } from "~/contexts/MenuContext";
 import { AboutConstituencyPage } from "~/types/AboutConstituencyPage";
 
 type MenuItem = Omit<AboutConstituencyPage, "body">;

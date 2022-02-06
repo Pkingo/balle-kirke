@@ -16,10 +16,7 @@ import { Layout } from "~/components/Layout";
 import { Calendar } from "~/components/Calendar";
 import { CalendarEvent } from "~/types/Event";
 import { getCalendarEvents } from "~/utils/getCalendarEvents";
-import {
-  MenuContextProps,
-  MenuProvider,
-} from "~/components/contexts/MenuContext";
+import { MenuContextProps, MenuProvider } from "~/contexts/MenuContext";
 import { getAboutConstituencyPages } from "~/utils/getAboutConstituency.server";
 
 export function links() {

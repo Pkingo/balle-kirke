@@ -6,7 +6,7 @@ export const Layout: FC = ({ children }) => (
   <div>
     <Header />
     <Banner />
-    <main className="mt-4 gap-8 w-main mx-auto flex justify-between">
+    <main className="mt-4 mb-8 gap-8 w-main mx-auto flex justify-between">
       {children}
     </main>
   </div>
