@@ -58,3 +58,13 @@ p {
   font-weight: normal;
   letter-spacing: -0.011em;
 }
+
+/* Links inside markdown */
+article a {
+  color: green;
+  font-weight: bold;
+}
+
+article a:hover {
+  text-decoration: underline;
+}

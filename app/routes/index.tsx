@@ -1,48 +1,35 @@
-import faker from "faker";
 import { LoaderFunction, useLoaderData } from "remix";
+import { FrontPageEvent } from "~/types/Event";
 import { formatDate } from "~/utils/date";
+import { getEvents } from "~/utils/getEvents.server";
+import Markdown from "markdown-to-jsx";
 
-type Event = {
-  id: string;
-  title: string;
-  date: number;
-  text: string;
-  createdAt: number;
-};
-
-export const loader: LoaderFunction = () => {
-  const events = Array.from({ length: 10 }).map((_, i) => ({
-    id: faker.datatype.uuid(),
-    date: faker.date.future().getTime(),
-    title: faker.lorem.sentence(),
-    text: faker.lorem.paragraph(),
-    createdAt: faker.date.past().getTime(),
-  }));
-
+export const loader: LoaderFunction = async () => {
+  const events = await getEvents();
   return events;
 };
 
 export default function Index() {
-  const data = useLoaderData<Event[]>();
+  const data = useLoaderData<FrontPageEvent[]>();
   return (
     <div className="flex flex-col gap-8">
-      {data.map(({ id, ...event }) => (
-        <Event key={id} {...event} />
+      {data.map((event) => (
+        <Event key={event.slug} {...event} />
       ))}
     </div>
   );
 }
 
-export const Event: React.FC<Omit<Event, "id">> = ({
+export const Event: React.FC<FrontPageEvent> = ({
   title,
-  text,
-  createdAt,
+  body,
   date,
+  written,
 }) => (
   <div className="flex flex-col gap-2">
     <h3 className="text-green-main">{title}</h3>
     <p className="font-bold">Afholdes d. {formatDate(date, "date-time")}</p>
-    <p dangerouslySetInnerHTML={{ __html: text }} />
-    <p>Skrevet d. {formatDate(createdAt)}</p>
+    <Markdown options={{ wrapper: "article" }}>{body}</Markdown>
+    <p className="italic">Skrevet d. {formatDate(written)}</p>
   </div>
 );

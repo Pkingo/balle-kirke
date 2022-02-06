@@ -15,7 +15,7 @@ import tailwindStyles from "./styles/tailwind.css";
 import globalStyles from "./styles/global.css";
 import { Layout } from "~/components/Layout";
 import { Calendar } from "~/components/Calendar";
-import { TEvent } from "~/types/Event";
+import { CalendarEvent } from "~/types/Event";
 
 export function links() {
   return [
@@ -39,7 +39,7 @@ export const loader: LoaderFunction = () => {
 };
 
 export default function App() {
-  const data = useLoaderData<TEvent[]>();
+  const data = useLoaderData<CalendarEvent[]>();
   return (
     <html lang="en">
       <head>

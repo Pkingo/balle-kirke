@@ -17,3 +17,4 @@ collections:
       - { label: "Dato", name: "date", widget: "datetime" }
       - { label: "Billed", name: "thumbnail", widget: "image", required: false }
       - { label: "Tekst", name: "body", widget: "markdown" }
+      - { label: "Tekst", name: "body", widget: "markdown" }
