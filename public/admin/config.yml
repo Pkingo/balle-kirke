@@ -3,12 +3,12 @@ backend:
   # name: test-repo
   branch: main
 
-media_folder: "images/uploads"
+media_folder: "netlify/functions/server/content/images/uploads"
 
 collections:
   - name: "event"
     label: "Forside begivenhed"
-    folder: "content/events"
+    folder: "netlify/functions/server/content/events"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
