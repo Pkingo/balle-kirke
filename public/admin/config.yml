@@ -3,7 +3,7 @@ backend:
   # name: test-repo
   branch: main
 
-media_folder: "netlify/functions/server/content/images/uploads"
+media_folder: "images/uploads"
 
 collections:
   - name: "event"

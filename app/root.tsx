@@ -16,6 +16,11 @@ import { Layout } from "~/components/Layout";
 import { Calendar } from "~/components/Calendar";
 import { CalendarEvent } from "~/types/Event";
 import { getCalendarEvents } from "~/utils/getCalendarEvents";
+import {
+  MenuContextProps,
+  MenuProvider,
+} from "~/components/contexts/MenuContext";
+import { getAboutConstituencyPages } from "~/utils/getAboutConstituency.server";
 
 export function links() {
   return [
@@ -28,12 +33,20 @@ export const meta: MetaFunction = () => {
   return { title: "Balle Valgmenighed" };
 };
 
-export const loader: LoaderFunction = () => {
-  return getCalendarEvents();
+type LoaderData = MenuContextProps & {
+  calendarEvents: CalendarEvent[];
+};
+
+export const loader: LoaderFunction = async (): Promise<LoaderData> => {
+  const calendarEvents = await getCalendarEvents();
+  const about = await (
+    await getAboutConstituencyPages()
+  ).map(({ body, ...event }) => event);
+  return { calendarEvents, about };
 };
 
 export default function App() {
-  const data = useLoaderData<CalendarEvent[]>();
+  const { calendarEvents, ...rest } = useLoaderData<LoaderData>();
   return (
     <html lang="en">
       <head>
@@ -43,10 +56,12 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Layout>
-          <Outlet />
-          <Calendar events={data} />
-        </Layout>
+        <MenuProvider {...rest}>
+          <Layout>
+            <Outlet />
+            <Calendar events={calendarEvents} />
+          </Layout>
+        </MenuProvider>
         <ScrollRestoration />
         <Scripts />
         {process.env.NODE_ENV === "development" && <LiveReload />}
