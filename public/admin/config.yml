@@ -57,6 +57,7 @@ collections:
 
   - name: "church-paper"
     label: "Kirkeblad"
+    create: true
     folder: "netlify/functions/server/content/church-paper"
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     fields:
