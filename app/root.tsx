@@ -8,7 +8,6 @@ import {
   ScrollRestoration,
   useLoaderData,
 } from "remix";
-import faker from "faker";
 import type { MetaFunction } from "remix";
 
 import tailwindStyles from "./styles/tailwind.css";
@@ -16,6 +15,7 @@ import globalStyles from "./styles/global.css";
 import { Layout } from "~/components/Layout";
 import { Calendar } from "~/components/Calendar";
 import { CalendarEvent } from "~/types/Event";
+import { getCalendarEvents } from "~/utils/getCalendarEvents";
 
 export function links() {
   return [
@@ -29,13 +29,7 @@ export const meta: MetaFunction = () => {
 };
 
 export const loader: LoaderFunction = () => {
-  const events = Array.from({ length: 10 }).map((_, i) => ({
-    id: faker.datatype.uuid(),
-    date: faker.date.future().getTime(),
-    title: faker.lorem.sentence(),
-  }));
-
-  return events;
+  return getCalendarEvents();
 };
 
 export default function App() {

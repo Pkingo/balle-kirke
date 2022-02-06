@@ -5,13 +5,20 @@ type Props = {
   events: CalendarEvent[];
 };
 
-const CalendarItem: React.FC<CalendarEvent> = ({ title, date }) => (
+const CalendarItem: React.FC<CalendarEvent> = ({
+  title,
+  startTime,
+  endTime,
+}) => (
   <div className="flex gap-4">
     <div className="w-20 h-20 bg-green-main text-white justify-center flex items-center rounded font-bold">
-      {formatDate(date, "short-date")}
+      {formatDate(startTime, "short-date")}
     </div>
     <div className="flex justify-center flex-col w-56">
-      <p>KL. {formatDate(date, "time")}</p>
+      <p>
+        KL. {formatDate(startTime, "time")}
+        {endTime ? `  - ${formatDate(endTime, "time")}` : null}
+      </p>
       <p>{title}</p>
     </div>
   </div>
