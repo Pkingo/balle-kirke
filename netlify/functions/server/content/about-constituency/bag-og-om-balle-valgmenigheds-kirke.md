@@ -7,7 +7,7 @@ title: Bag og om Balle Valgmenigheds Kirke
 
 Balle Valgmenigheds Kirke blev bygget i 1884-85 efter tegning af arkitekt Andreas Peter Bentsen (1839-1914), Vallekilde. Han var inspireret af den svenske arkitekt Langlet fra Stockholm, af den byzantinske kirkearkitektur og frem for alt af de byzantinske centralkirker. Resultatet blev en ottekantet centralkirke med et kobberspir. Resten af kirken har skifertag. Indvendigt bliver det smukke træloft båret af otte træsøjler.  Udformningen af kirken har symbolsk karakter, idet den underbygger det grundtvigske ideal om en tæt forbindelse mellem præst og menighed. Det kommer blandt andet til udtryk ved, at prædikestolen er placeret centralt med kort afstand til de forreste bænke. Kirkebænkene former nærmest en halvcirkel rundt om prædikestolen, så at uanset hvor henne i kirken, man sidder, kan man se og høre præsten.
 
-![Billede af Balle Kirke](/images/uploads/balle-valgmenighedskirke-historisk.jpg "Balle Valgmenigheds Kirke")
+![Billede af Balle Kirke](/public/images/uploads/balle-valgmenighedskirke-historisk.jpg "Balle Valgmenigheds Kirke")
 
 Det centrale i gudstjenesten i en grundtvigsk menighed er sakramenterne dåb og nadver. Vi samles om “badet og bordet”. Derfor er døbefonten placeret helt centralt, lige i midten af kirken.
 

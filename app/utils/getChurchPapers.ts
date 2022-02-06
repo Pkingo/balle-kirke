@@ -24,5 +24,5 @@ export async function getChurchPaper() {
     })
   );
 
-  return papers;
+  return papers.reverse();
 }
