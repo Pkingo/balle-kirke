@@ -30,11 +30,11 @@ collections:
           default: "calendar-event",
         }
       - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Starttidspunkt", name: "startTime", widget: "date" }
+      - { label: "Starttidspunkt", name: "startTime", widget: "datetime" }
       - {
           label: "Slutstidspunkt",
           name: "endTime",
-          widget: "date",
+          widget: "datetime",
           required: false,
         }
 
