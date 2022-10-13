@@ -54,8 +54,8 @@ const bestyrelsen: ContactCard[] = [
 
 const Bestyrelse = () => (
   <div>
-    <h3>Bestyrelse</h3>
-    <h4>Bestyrelsen for Balle Valgmenighed</h4>
+    <h3 className="text-green-main mt-4">Bestyrelse</h3>
+    <h4 className="text-green-main mt-4">Bestyrelsen for Balle Valgmenighed</h4>
 
     {bestyrelsen.map((contact, index) => (
       <ContactCard key={index} {...contact} />

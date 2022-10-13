@@ -16,17 +16,33 @@ export const ContactCard = ({
   secondPhone,
 }: ContactCard) => (
   <div>
-    <h5>{name}</h5>
+    <h5 className="text-green-main mt-4">{name}</h5>
     {address ? <p>{address}</p> : null}
     <p>
-      Tlf. <a href={`tel:${phone}`}>{formatPhonenumber(phone)}</a>
+      Tlf.{" "}
+      <a
+        className="text-green-main text-bold hover:underline"
+        href={`tel:${phone}`}
+      >
+        {formatPhonenumber(phone)}
+      </a>
       {secondPhone ? (
         <>
           {" / "}{" "}
-          <a href={`tel:${secondPhone}`}>{formatPhonenumber(secondPhone)}</a>
+          <a
+            className="text-green-main text-bold hover:underline"
+            href={`tel:${secondPhone}`}
+          >
+            {formatPhonenumber(secondPhone)}
+          </a>
         </>
       ) : null}
     </p>
-    <a href={`mailto:${email}`}>{email}</a>
+    <a
+      className="text-green-main text-bold hover:underline"
+      href={`mailto:${email}`}
+    >
+      {email}
+    </a>
   </div>
 );

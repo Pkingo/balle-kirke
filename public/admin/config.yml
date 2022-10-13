@@ -17,6 +17,27 @@ collections:
       - { label: "Billed", name: "thumbnail", widget: "image", required: false }
       - { label: "Tekst", name: "body", widget: "markdown" }
 
+  - name: "calendar-events"
+    label: "Kalender begivenheder"
+    folder: "netlify/functions/server/content/calendar-events"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "calendar-event",
+        }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Starttidspunkt", name: "startTime", widget: "date" }
+      - {
+          label: "Slutstidspunkt",
+          name: "endTime",
+          widget: "date",
+          required: false,
+        }
+
   - name: "about-constituency"
     label: "Om valgmenigheden"
     create: true
@@ -31,16 +52,6 @@ collections:
     label: "Alter billedet"
     folder: "netlify/functions/server/content/alter"
     slug: "{{slug}}"
-    fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "event" }
-      - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Tekst", name: "body", widget: "markdown" }
-
-  - name: "priest-blog"
-    label: "Præsten har ordet"
-    create: true
-    folder: "netlify/functions/server/content/priest-blog"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "event" }
       - { label: "Titel", name: "title", widget: "string" }

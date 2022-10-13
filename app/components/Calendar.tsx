@@ -25,7 +25,7 @@ const CalendarItem: React.FC<CalendarEvent> = ({
 );
 
 export const Calendar: React.FC<Props> = ({ events }) => (
-  <div>
+  <div className="mx-auto lg:mx-0">
     <h3 className="text-green-main">Det sker i Valgmenigheden</h3>
     <div className="flex flex-col gap-4 pt-6">
       {events.map((event) => (

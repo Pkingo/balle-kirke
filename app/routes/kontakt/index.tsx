@@ -2,8 +2,8 @@ import { Link } from "remix";
 
 const Kontakt = () => (
   <div>
-    <h3>Kontakt</h3>
-    <h4>Balle Valgmenighed</h4>
+    <h3 className="text-green-main mt-4">Kontakt</h3>
+    <h4 className="text-green-main mt-4">Balle Valgmenighed</h4>
     <p>
       Ballevej 41
       <br />
@@ -12,8 +12,20 @@ const Kontakt = () => (
 
     <p>
       Her findes kontaktoplysninger for{" "}
-      <Link to="/kontakt/ansatte">ansatte</Link> og{" "}
-      <Link to="/kontakt/bestyrelse">bestyrelse</Link>.
+      <Link
+        className="text-green-main text-bold hover:underline"
+        to="/kontakt/ansatte"
+      >
+        ansatte
+      </Link>{" "}
+      og{" "}
+      <Link
+        className="text-green-main text-bold hover:underline"
+        to="/kontakt/bestyrelse"
+      >
+        bestyrelse
+      </Link>
+      .
     </p>
   </div>
 );

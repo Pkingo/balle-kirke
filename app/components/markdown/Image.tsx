@@ -7,11 +7,11 @@ export const Image = (
     HTMLImageElement
   >
 ) => (
-  <figure className="py-4">
+  <figure className="py-4x">
     <img
       {...props}
       src={removePublicPath(props.src || "")}
-      className="mx-auto border-2 border-green-main"
+      className="border-2 border-green-main mx-auto"
     />
     <figcaption className="italic text-center">{props.title}</figcaption>
   </figure>

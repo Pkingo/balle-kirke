@@ -25,7 +25,7 @@ const ansatte: ContactCard[] = [
 
 const Ansatte = () => (
   <div>
-    <h3>Ansatte</h3>
+    <h3 className="text-green-main mt-4">Ansatte</h3>
     {ansatte.map((contact, index) => (
       <ContactCard key={index} {...contact} />
     ))}

@@ -1,6 +1,9 @@
 module.exports = {
   content: ["./app/**/*.{ts,tsx}"],
   theme: {
+    screens: {
+      lg: "1200px",
+    },
     extend: {
       colors: {
         green: {

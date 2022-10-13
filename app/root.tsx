@@ -39,6 +39,7 @@ export const loader: LoaderFunction = async (): Promise<LoaderData> => {
   const about = await (
     await getAboutConstituencyPages()
   ).map(({ body, ...event }) => event);
+  console.log(calendarEvents);
   return { calendarEvents, about };
 };
 
