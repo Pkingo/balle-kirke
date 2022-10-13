@@ -1,6 +1,6 @@
 export type CalendarEvent = {
-  startTime: Date;
-  endTime?: Date;
+  startTime: string;
+  endTime?: string;
   title: string;
 };
 

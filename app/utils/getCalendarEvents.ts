@@ -22,7 +22,6 @@ export const getCalendarEvents = async () => {
         startTime: string;
         endTime: string;
       }>(file.toString());
-      console.log(attributes);
       return {
         slug: dirent.name.replace(/\.md/, ""),
         title: attributes.title,
@@ -34,8 +33,8 @@ export const getCalendarEvents = async () => {
 
   return events
     .filter((event) => {
-      console.log(isPast(event.startTime));
-      return isPast(event.startTime);
+      console.log(event);
+      return !isPast(event.startTime);
     })
     .sort((a, b) => (a.startTime > b.startTime ? 1 : -1));
 };
