@@ -1,6 +1,6 @@
 ---
 layout: calendar-event
 title: Foredrag med Bertel Haarder i Forsamlingshuset
-startTime: 20-10-2022 20:00:00
-endTime: 20-10-2022 22:00:00
+startTime: 2022-10-24T18:00:00.000Z
+endTime: 2022-10-24T20:00:00.000Z
 ---
